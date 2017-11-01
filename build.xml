@@ -1,0 +1,19 @@
+<project name ="Test" >
+		<target name ="print">
+				<echo>First Example</echo>
+		</target>
+		
+		<target name ="print1" depends="print2">
+				<echo>First Example</echo>
+		</target>
+		
+		<target name ="print2" depends="print">
+				<echo>First Example</echo>
+		</target>
+		
+		<target name ="print3" depends="print2">
+				<echo>First Example</echo>
+		</target>
+		
+		
+</project>
